@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Color Top Page in Mobile  -->
+  <meta name="theme-color" content="#0F1322" />
+
+
+  <!-- titlt page  -->
+  <title>دوست دار خانواده</title>
+
+
+  <!--
+    - favicon
+  -->
+
+  <link rel="shortcut icon" href="./assets/images/logo/favicon2.png" type="image/x-icon">
+
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style-prefix.css">
+  <link rel="stylesheet" href="./assets/css/product.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+
+</head>
+
+<body dir="rtl">
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal d-none" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/slider/fresh-dairy-products (1).jpg" alt="subscribe newsletter" width="400"
+          height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title"> در خبرنامه ما عضو شوید. </h3>
+
+            <p class="newsletter-desc">
+              در خبرنامه <span class="blue-text FSarbaz">دوست دار
+                خانواده</span> عضو شوید برای دریافت محصولات جدید !
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="ایمیل شما " required>
+
+          <button type="submit" class="btn-newsletter">عضویت</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- add vote modal  -->
+
+  <div class="modal-fother m2">
+    <div class="modal-child m1 modal-size-main " onclick="event.stopPropagation()">
+      <div class="modal-form ">
+        <form action="">
+
+          <div class="close4  text-left  d-flex justify-content-end">
+            <span class="fa fa-close effect  "
+              onclick="openNav('.m1', '.m2', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+          </div>
+          <p class="text-h5 mb-3">دیدگاه خود را شرح دهید</p>
+
+          <div class="form-group mb-2">
+            <label for="" class="text-body-1 ">
+              عنوان نظر:
+            </label>
+
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+            <p class="text-danger d-min dn">لطفا مقداری بیش از 20 کاراکتر وارد کنید!</p>
+
+          </div>
+
+          <div class="form-group mb-1">
+
+            <label for="" class="text-body-1">
+              نکات مثبت:
+            </label>
+            <div class="d-flex-between">
+
+              <textarea name="" id="" cols="30" class="form-control pplus" id="exampleFormControlInput1"></textarea>
+            </div>
+            <p class="text-danger dn d-plus">لطفا مقداری بیش از 3 کاراکتر وارد کنید!</p>
+
+            <div class="list-modal-p">
+            </div>
+
+          </div>
+
+          <div class="form-group mb-2">
+            <label for="" class="text-body-1">
+              نکات منفی:
+            </label>
+
+            <div class="d-flex-between">
+
+              <textarea name="" id="" cols="30" class="form-control pplus" id="exampleFormControlInput1"></textarea>
+            </div>
+            <p class="text-danger d-min dn">لطفا مقداری بیش از 3 کاراکتر وارد کنید!</p>
+
+            <div class="list-modal-m">
+            </div>
+          </div>
+
+          <div class="form-group mb-1">
+            <label for="" class="text-body-1">
+              امتیاز شما نسبت به این کالا :
+            </label>
+
+            <div class="starts">
+              <span class="five-pointed-star ml-2 activeVote" date-start title="1 امتیاز"></span>
+              <span class="five-pointed-star  ml-2 activeVote" date-start title="2 امتیاز"></span>
+              <span class="five-pointed-star ml-2 activeVote" date-start title="3 امتیاز"></span>
+              <span class="five-pointed-star ml-2 activeVote" date-start title="4 امتیاز"></span>
+              <span class="five-pointed-star ml-2 activeVote" date-start title="5 امتیاز"></span>
+              <p class="mr-2">از مجموعه <span class="color-web resualt-star">5</span> امتیاز</p>
+            </div>
+
+          </div>
+
+          <div class="form-group mb-4">
+            <label for="" class="text-body-1">
+              نظر شما نسبت به این کالا :
+            </label>
+            <select class="form-control" id="exampleFormControlSelect1">
+              <option selected>خرید این محصول را توصیه میکنم!</option>
+              <option> خرید این محصول را توصیه نمیکنم!</option>
+            </select>
+          </div>
+
+
+          <div class="form-group mb-1">
+            <label for="" class="text-body-1">
+              متن نظر:
+            </label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+              placeholder="برای ما بنویسید ..."></textarea>
+            <p class="text-danger d-min dn">لطفا مقداری بیش از 20 کاراکتر وارد کنید!</p>
+
+          </div>
+          <div class="d-flex justify-content-center pt-3 w-100">
+            <div class=" btn-modal">
+              <button class="btn p-3 w-100 coBack">
+                افزودن نظر جدید
+              </button>
+            </div>
+
+            <!-- <div class="close3 effect ">
+                            <span class="fa fa-arrow-left"></span>
+                        </div> -->
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast d-none" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/product2/clothes-2.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        محصول پرطرفدار موجود شد !
+      </p>
+
+      <p class="toast-title">
+        پنیر محلی تبریز
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 دقیقه</time> پیش
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header class="shadow">
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b class="blue-text font2">ارسال رایگان ! </b>
+            برای سفارش های بیشتر از :
+            <b> <span>300,000</span> <span>تومان</span></b>
+          </p>
+        </div>
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+
+        <h1 class=" FSarbaz blue-text header-content">
+          دوست دار خانواده
+        </h1>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="محصول مورد نظر خود را جستجو کنید !">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">خانه</a>
+          </li>
+
+          <li class="menu-category"></li>
+          <li class="menu-category ">
+            <a href="#" class="menu-title">لبنی</a>
+
+            <ul class="dropdown-list">
+
+              <li class="panel-list-item">
+                <a href="#">بستنی فالوده </a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#"> شیر </a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#"> پنیر</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> کره و ماست</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> دوغ </a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> پنیر</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> دوغ </a>
+              </li>
+
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">غیر لبنی</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">ترشی</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">رب</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">حلوا</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#"> عسل</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#TellUs" class="menu-title">ارتباط با ما</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">درباره ما </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+     
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+
+
+
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">منو</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">خانه</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">لبنی</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">شیر</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"> دوغ</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">بستنی فالوده </a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ماست</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">غیر لبنی</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">عسل</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ترشی</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">نوشیدنی ها</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"> رب</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <a href="#TellUs" class="menu-title hover-text-bookColor">ارتباط با ما</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title hover-text-bookColor">درباره ما </a>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+
+
+  <!-- start main  -->
+  <main>
+
+    <div class="container ">
+
+      <!-- Start Section Shop-->
+      <div id="Main-Detail" class="row">
+
+        <!--  
+        ****************************
+          gallery of product Start
+        ****************************
+        -->
+        <div class="col-12 col-lg-4 col-md-11 mb-4 mx-0 mt-4 mb-md-0 row pr-image-container">
+          <div class="c-gallery">
+            <div class="c-gallery__items">                                
+                          <div class="c-gallery__options icon-c-gallery">
+                              <ul>
+                                  <li class="">
+                                      <a href="" title="علاقه مندی ها">
+                                          <i class="fa fa-heart-o co"></i>
+                                      </a>
+                                  </li>
+
+                                  <li class="">
+                                      <a href="" title="  لینک محصول">
+                                          <i class="fa fa-share-alt co"></i>
+                                      </a>
+                                  </li>
+
+                              </ul>
+                          </div>
+              <div class="c-gallery__items ">
+                <div>
+
+                  <!-- first image in box  -->
+                  <div class="c-gallery__img mySlides c mb-3">
+                    <img src="./assets/images/product2/06-1.jpg" alt="" class="img-respansive">
+                  </div>
+
+                  <!-- box video  -->
+                  <div class="c-gallery__img mySlides lg-outer mb-3">
+                    <img src="./assets/images/product2/clothes-2.jpg" alt="" class="img-respansive">
+                    <!--  video  -->
+                    <!-- <div class="video-push"><span class="fa fa-play-circle effect"
+                        onclick="openNav('.m10', '.m11', 'inherit', 'inherit', 'hidden', 'hidden','visibility')"></span>
+                    </div> -->
+                  </div>
+                  <!-- end box video  -->
+
+                  <!-- other big image  -->
+                  <div class="c-gallery__img mySlides  mb-3">
+                    <img src="./assets/images/product2/WhatsApp-Image-2021-06-07-at-2.08.47-PM.jpeg" alt=""
+                      class="img-respansive">
+                  </div>
+                  <div class="c-gallery__img mySlides  mb-3">
+                    <img src="./assets/images/product2/cream.jpg" alt="" class="img-respansive">
+                  </div>
+                  <div class="c-gallery__img mySlides  mb-3">
+                    <img src="./assets/images/product2/Milk.jpg" alt="" class="img-respansive">
+                  </div>
+
+                  <!-- sub box image galley  -->
+                  <div>
+                    <ul class=" box-img-gallery p-0">
+                      <li class="effect dot .c-gallery__img" onclick="currentSlide(1)"><img
+                          src="./assets/images/product2/06-1.jpg" alt="">
+                      </li>
+                      <li class="effect dot .c-gallery__img" onclick="currentSlide(2)"><img
+                          src="./assets/images/product2/clothes-2.jpg" alt=""></li>
+                      <li class="effect dot .c-gallery__img" onclick="currentSlide(3)"><img
+                          src="./assets/images/product2/WhatsApp-Image-2021-06-07-at-2.08.47-PM.jpeg" alt="">
+                      </li>
+                      <li class="effect dot .c-gallery__img" onclick="currentSlide(4)"><img
+                          src="./assets/images/product2/cream.jpg" alt="">
+                      </li>
+                      <li class="effect dot .c-gallery__img" onclick="currentSlide(5)"><img
+                          src="./assets/images/product2/Milk.jpg" alt="">
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--  
+        ****************************
+          gallery of product End
+        ****************************
+        -->
+
+        <!-- product start -->
+        <div class="col-12 col-lg-8 col-md-12 mt-lg-4   pr-info-container height-auto">
+          <div class="pr_detail">
+            <div class="product_description">
+              <h1 class="product_title"><a href="" dideo-checked="true">دوغ گاز دار اصفهان
+                </a></h1>
+              <div class="row justify-content-between">
+
+                <!-- detiels of product -->
+                <div class="col-12 col-md-7 ">
+                  <h2 class="product_latinName">
+                    <span>وزن</span>
+
+                    <!-- value weight  -->
+                    <span>1.5 لیتری</span>
+
+                  </h2>
+
+                  <!-- price and count  -->
+                  <div class="free-send row">
+                    <div class="col-md-12">
+                      <p class="free-send-text">
+                        <img src="./assets/images/IconsLabanit/fastSend.png" alt="ارسال رایگان" class="img-respansive">
+                        <span>ارسال رایگان سفارش</span>
+                      </p>
+                      <p class="free-send-text2 font3">
+                        برای سفارش های کوچک و بالای <b> 1 </b> میلیون تومان (<b>از طریق پست</b>)
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="product_price2">
+                    <span class="switch_lable w-100">  قیمت قبل از تخفیف : </span> <br><del class="price d-inline-block text-muted">295،000
+                    </del>
+                    <label class="toman text-muted">تومان</label>
+                    <br>
+                    <span class="switch_lable w-100"> قیمت : </span> <br><span class="price">275،000
+                    </span>
+                    <label class="toman">تومان</label>
+                  </div>
+
+                  <div class="pr_switch_wrap" id="Deliv">
+                    <span class="switch_lable" id="q-select">تعداد:</span>
+                    <br>
+                    <div class="cart-product-quantity">
+                      <div class="quantity">
+                        <input type="button" value="-" class="minus full">
+                        <input id="Basket-quantity" name="quantity" value="1" max="100" min="1" title="Qty" class="qty">
+                        <input type="button" value="+" class="plus full">
+
+                      </div>
+
+                      <span class="quantity-remain"> تنها <span class="quantity-bold persian"> ۱
+                        </span> عدد در انبار باقیست ! </span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- mojod product   -->
+
+                <div class="col-12  col-md-4 d-flex justify-content-around  h-auto" id="del-info"
+                  style="height: auto !important;">
+
+                  <div class="col-12">
+                    <label class="mony-back">7 روز ضمانت بازگشت کالا</label>
+                  </div>
+
+
+                  <div class="col-12 d-flex ">
+                    <img src="./assets/images/IconsLabanit/CallProduct.webp" alt="" class="img-icon ml-3">
+                    <p class="rgreen">موجود در انبار و آماده ارسال</p>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="d-flex align-items-center quantity-remain2">
+                      <span class="fa fa-bullseye"></span>
+                      <p>امکان تحویل سریع برای اصفهان</p>
+                    </div>
+                    <div class="d-flex align-items-center quantity-remain2">
+                      <span class="fa fa-bullseye"></span>
+                      <p>تحویل بعد از <span class="quantity-bold persian"
+                          style="color: rgb(68, 177, 245)  !important;">2</span> روز برای
+                        شهرستان
+                      </p>
+                    </div>
+
+                    <div class="cart_extra2 ">
+                      <div class="cart_btn" id="add-top">
+                        <button class="btn btn-fill-out btn-addtocart w-100 sticky-lg-top" data-status="1"
+                          data-id="1000" type="button" style="padding: 5px;">افزودن
+                          به سبد خرید</button>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+                <!-- namojod cods  -->
+                <div class="col-11 col-md-4  d-none" id="del-info">
+                  <div class="col-12">
+                    <div class="noProdact">
+                      <div>ناموجود</div>
+                      <hr>
+                      <!-- button off -->
+                      <div class="">
+
+                        <p>
+                          متاسفانه این کالا در حال حاضر موجود نیست. می توانید از طریق دکمه زیر
+                          از زمان موجود شدن آن مطلع شوید.
+                        </p>
+
+                        <button class="effect">موجود شد به من اطلاع بده </button>
+                      </div>
+                      <!-- button on  -->
+                      <p class="font-weight-bold d-none">در صورت موجود شدن به شما اطلاع داده خواهد
+                        شد!</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- product end -->
+
+      </div>
+
+      <!-- nav bar start -->
+      <ul class="nav nav-tabs nav-product jsActive" id="main-nav">
+        <li class="active2">
+          <a href="#tozihat">
+            توضیحات
+          </a>
+        </li>
+        <li>
+          <a href="#InformationProduct">
+            مشخصات محصول
+          </a>
+        </li>
+        <li>
+          <a href="#vote">
+            نظر کاربران
+          </a>
+        </li>
+        <li>
+          <a href="#quiez">
+            پرسش و پاسخ
+          </a>
+        </li>
+      </ul>
+
+      <!--  description -->
+      <section class="row">
+        <div class="col-12 p-0">
+          <div class="tab-style3" id="tozihat">
+
+            <!-- nav bar end -->
+
+            <!-- description start -->
+            <div class="boxShadow mt-3 mb-5 p-3 text-right mb-text">
+              <img src="./assets/images/slider/fresh-dairy-products (1).jpg" alt="" class="img-respansive">
+
+              <div class="descript mt-3">
+
+                <div class="row">
+                  <div class="col-12">
+                    <span class="font8">
+                      دوغ محلی اصفهان
+                    </span>
+                    <br>
+                    <br>
+                    <span class="font5">
+                      خوشگوار و تجربه لذت بخش !
+                    </span>
+                  </div>
+                </div>
+
+
+
+                <p class="font3">
+                  بدون شک همه می‌دانیم که نوشیدن شیر، می‌تواند بخش زیادی از نیازهای بدن ما به انواع ویتامین‌ها و مواد
+                  مغذی را تامین کند. البته همه ما هم می‌دانیم که اغلب بچه‌ها و حتی بزرگترها، تمایلی به خوردن شیر ندارند.
+                  مصرف روتین شیر برای این افراد، یک چالش بزرگ است. در این صورت، یک راه حل فوق‌العاده وجود دارد: این
+                  افراد می‌توانند یک لیوان دوغ سرد و خوشمزه را همراه با انواع سبزی‌های معطر و خوش‌مزه، نوش جان کنند.
+
+                  دوغ را می‌توان به‌صورت مستقیم از شیر تهیه کرد و یا با استفاده از ماست و مقدار مشخصی آب، آن را آماده
+                  کرد. در هر دو صورت، پایه اصلی و اولیه دوغ، شیر است.
+                </p>
+
+
+              </div>
+
+            </div>
+            <!-- description end -->
+
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- table of product start -->
+      <section>
+
+        <div class="row mb-5">
+          <div class="col-12 boxShadow text-right show" id="InformationProduct">
+            <label for="tabel" class="p-2"> مشخصات اصلی :</label>
+            <table class="TableProduct table table-bordered">
+              <tr>
+                <th>
+                  نوع
+                </th>
+                <td>
+                  دوغ محلی
+                  اصفهان
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  وزن محصول
+                </th>
+                <td>
+                  1.5
+                  لیتری
+
+                </td>
+              </tr>
+
+
+
+            </table>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Vote of product and queis -->
+      <section>
+        <div class="row">
+          <!-- add vots  -->
+          <div class="col-12 boxShadow  voteProduct" id="vote">
+            <div class="texthead mb-4">
+              امتیاز و دیدگاه کاربران
+            </div>
+
+            <div class="voteNumber mb-3">
+              <span class="voteBold">3</span> از
+              <span>5</span>
+              <div class="starts">
+                <span class="five-pointed-star activeVote"></span>
+                <span class="five-pointed-star activeVote"></span>
+                <span class="five-pointed-star activeVote"></span>
+                <span class="five-pointed-star"></span>
+                <span class="five-pointed-star"></span>
+                <p class="mr-2">از مجموعه <span class="activeVote">1</span> امتیاز</p>
+              </div>
+            </div>
+
+            <div>
+              <div class="font5 mb-4">
+                شما هم می‌توانید در مورد این کالا نظر بدهید و پس از تایید کد <span class="colorsky">تخفیف</span> دریافت
+                نمایید.
+              </div>
+
+              <p class="font6">
+                برای ثبت نظر، لازم است ابتدا وارد حساب کاربری خود شوید.
+                <br> اگر این محصول را قبلا خریده باشید، نظر شما به عنوان مالک محصول ثبت خواهد شد.
+              </p>
+
+
+              <button class="btn effect coBack "
+                onclick="openNav('.m1', '.m2', 'inherit', 'inherit', 'hidden', 'hidden','visibility')">
+                افزودن نظر جدید
+              </button>
+
+
+            </div>
+
+
+
+          </div>
+          <!-- vots  -->
+          <div class="col-12 boxShadow  voteProduct ">
+            <!-- head nav  -->
+            <div class=" mb-4 d-flex d-flex-between border-bottom pb-2 row headnav">
+
+              <div class="texthead  col-12 col-lg-3">
+                نظرات کاربران
+              </div>
+
+              <div class=" col-12 col-lg-8">
+                <!-- head nav  -->
+                <ul class="nav nav-style ">
+                  <li class=""> مرتب سازی : </li>
+                  <li class="itemn border-bottom-co">جدیدترین نظرات </li>
+                  <li class="itemn border-bottom-co">نظر خریداران </li>
+                  <li class="itemn border-bottom-co"> مفیدترین نظرات</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- user vots box  -->
+            <div class="border p-4 mb-3">
+              <div class="user-vote  border-bottom">
+                <div>
+                  <span class="fa fa-user-o"></span>
+                  <span>مسعود مهارت فرد</span>
+                </div>
+                <div>
+                  (
+                  <span>جمعه</span>
+                  <span>26</span>
+                  <span>دی</span> )
+                </div>
+                <div class="kharidar">خریدار</div>
+
+              </div>
+              <div class="user-content">
+                <div class="vote-like">
+                  <p class="hope-vote">
+                    <span class="fa fa-thumbs-o-up"></span>
+                    <span>خرید این محصول را توصیه میکنم.</span>
+                  </p>
+                  <p class="mb-4">
+                    دوغ خوش طعمی هست
+                  </p>
+
+                  <p class="font6">
+                    <span class="like ml-2">نقاط قوت</span>
+                    <span> ارزان بودن </span>
+                  </p>
+
+                  <p class="font6">
+                    <span class="dontLike ml-2">نقاط ضعف</span>
+                    <span> ایرانی بودن </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="border p-4 mb-3">
+              <div class="user-vote  border-bottom">
+                <div>
+                  <span class="fa fa-user-o"></span>
+                  <span> ابوالفضل کاربخش</span>
+                </div>
+                <div>
+                  (
+                  <span>جمعه</span>
+                  <span>26</span>
+                  <span>دی</span> )
+                </div>
+                <div class="kharidar">خریدار</div>
+
+              </div>
+              <div class="user-content">
+                <div class="vote-like">
+                  <p class="dontLike">
+                    <span class="fa fa-thumbs-o-down"></span>
+                    <span>خرید این محصول را توصیه نمیکنم.</span>
+                  </p>
+                  <p class="mb-4">
+                    این دوغ نمونه نداره
+                  </p>
+
+                  <p class="font6">
+                    <span class="like ml-2">نقاط قوت</span>
+                    <span> ارزان</span>
+                  </p>
+
+                  <p class="font6">
+                    <span class="dontLike ml-2">نقاط ضعف</span>
+                    <span> ندارد </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- add quiez  -->
+          <div class="col-12 boxShadow  voteProduct" id="quiez">
+
+            <div class="texthead1 mb-4">
+              پرسش و پاسخ
+            </div>
+
+            <form action="">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"> پرسش خود را در مورد محصول مطرح نمایید</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+              <!-- btn  -->
+              <div class="d-flex-between pt-3">
+                <button class="btn effect coBack">
+                  ثبت پاسخ
+                </button>
+                <P class="font6 mr-3 mt-3">با انتخاب دکمه “ثبت پرسش”، موافقت خود را با قوانین انتشار
+                  محتوا اعلام می کنم.</P>
+              </div>
+            </form>
+
+
+          </div>
+          <!-- quiezs  -->
+          <div class="col-12 boxShadow  voteProduct ">
+            <!-- head nav  -->
+            <div class=" mb-4 d-flex d-flex-between border-bottom pb-2 row headnav">
+
+              <div class="texthead1  col-12 col-lg-3">
+                پرسش ها و پاسخ ها
+              </div>
+
+              <div class=" col-12 col-lg-8">
+                <!-- head nav  -->
+                <ul class="nav nav-style ">
+                  <li class=""> مرتب سازی : </li>
+                  <li class="itemn border-bottom-co">جدیدترین پرسش </li>
+                  <li class="itemn border-bottom-co"> پرسش های شما </li>
+                  <li class="itemn border-bottom-co"> بیشترین پاسخ به پرسش</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- quies box  -->
+
+            <div class="border co-dk p-4 mb-3" id="porsesh">
+              <div class="  border-dashed-bottom ">
+                <div>
+                  <span> سلام سال ساخت این دوغ چه سالی هستش؟ </span>
+                </div>
+                <div class="mbt1">
+                  (
+                  <span>جمعه</span>
+                  <span>26</span>
+                  <span>دی</span> )
+                </div>
+              </div>
+              <div class="user-content">
+                <div class="vote-like">
+                  <p class="mb-4 mr-5">
+                    <span> پاسخ ادمین :</span> 1402 هستش
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+      </section>
+
+      <!-- slider montakhab  -->
+      <div class="sidebar-widget slider-top1 m-t-b">
+
+        <div class="o-headline ">
+          <span> محصولات مرتبط</span>
+        </div>
+        <!-- slider main  -->
+        <div>
+          <div class="container noSelect">
+            <!-- start  slider sort Product-->
+            <!-- item 1 slide -->
+            <div class="flex flex-wrap justify-content-between noSelect slidmain slidejs1 " data-slide="0">
+
+              <!-- items slider -->
+              <!-- item 1 -->
+              <div class="product-grid mt-3">
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+
+                    <img src="./assets/images/product2/clothes-2.jpg" alt="Mens Winter Leathers Jackets" width="300"
+                      class="product-img default">
+                      
+                    <img src="./assets/images/product2/panir 2.jpeg" alt="Mens Winter Leathers Jackets" width="300"
+                      class="product-img hover">
+
+                    <p class="showcase-badge">ناموجود</p>
+
+
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <a href="#" class="showcase-category">پنیر لیقوان</a>
+
+                    <a href="#">
+                      <h3 class="showcase-title">پنیر اصل تبریزی </h3>
+                    </a>
+
+                    <div class="showcase-rating" dir="ltr">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box ">
+                      <p class="price">35,000 <span>تومان</span></p>
+                      <del class="mt-1">40,000 <span>تومان</span></del>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+
+                    <img src="./assets/images/product2/06-1.jpg" alt="Mens Winter Leathers Jackets" width="300"
+                      class="product-img default">
+                    <img src="./assets/images/product2/WhatsApp-Image-2021-06-07-at-2.08.47-PM.jpeg"
+                      alt="Mens Winter Leathers Jackets" width="300" class="product-img hover">
+
+                    <p class="showcase-badge">15%</p>
+
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <a href="#" class="showcase-category">دوغ گرما دیده زالی 1.5 لیتری </a>
+
+                    <a href="#">
+                      <h3 class="showcase-title"> تهیه شده از ماست تازه پرچرب گاوی </h3>
+                    </a>
+
+                    <div class="showcase-rating" dir="ltr">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box">
+                      <p class="price">35,000 <span>تومان</span></p>
+                      <del class="mt-1">40,000 <span>تومان</span></del>
+                    </div>
+
+                  </div>
+
+                </div>
+
+                <div class="showcase">
+
+                  <div class="showcase-banner">
+
+                    <img src="./assets/images/product2/clothes-2.jpg" alt="Mens Winter Leathers Jackets" width="300"
+                      class="product-img default">
+                    <img src="./assets/images/product2/panir 2.jpeg" alt="Mens Winter Leathers Jackets" width="300"
+                      class="product-img hover">
+
+                    <p class="showcase-badge">ناموجود</p>
+
+
+                  </div>
+
+                  <div class="showcase-content">
+
+                    <a href="#" class="showcase-category">پنیر لیقوان</a>
+
+                    <a href="#">
+                      <h3 class="showcase-title">پنیر اصل تبریزی </h3>
+                    </a>
+
+                    <div class="showcase-rating" dir="ltr">
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                      <ion-icon name="star"></ion-icon>
+                    </div>
+
+                    <div class="price-box ">
+                      <p class="price">35,000 <span>تومان</span></p>
+                      <del class="mt-1">40,000 <span>تومان</span></del>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+
+  </main>
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+
+
+    <div class="footer-nav" id="TellUs">
+
+      <div class="container">
+
+
+
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">ارتباط با ما</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              اصفهان ، خیابان سهروردی شمالی خیابان خرمشهر خیابان عشقیار نبش کوچه دوم
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+02122988049" class="footer-nav-link">02122988049</a>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+02122988049" class="footer-nav-link">09023127615</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title"> </h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+        <div class="d-flex">
+          <a href="#">
+            <img src="assets/images/PAy/logo.png" alt="نماد الکتروینک">
+          </a>
+
+          <a href="#">
+            <img src="assets/images/PAy/etehadiye.png" alt="عضو اتحادیه کشوری">
+          </a>
+        </div>
+
+        <p class="copyright">
+          تمامی حقوق &copy; این وب سایت محفوظ و متعلق به لبنیات <a href="#" class="blue-text FSarbaz">دوست دار
+            خانواده</a>
+          می باشد
+          .
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="assets/js/jquery-3.5.1.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="./assets/js/Header.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

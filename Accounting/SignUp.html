@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ثبت نام</title>
+
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="../assets/css/Accounting.css">
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/style-prefix.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+        integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="../assets/css/bootstrap.min.css"> -->
+</head>
+
+<body>
+    <div class="body-dark"></div>
+    <div class="main" dir="rtl">
+
+        <section class="signup">
+            <!-- <img src="images/signup-bg.jpg" alt=""> -->
+            <div class="container">
+                <div class="signup-content">
+                    <form  id="signup-form" class="signup-form" action="#">
+                        <h2 class="form-title Fvazir"> ثبت نام</h2>
+                        <div class="form-group ">
+                            <input type="text" class="form-input border-danger border" name="name" id="name"
+                                placeholder="نام و نام خانوادگی " />
+                            <span class="font1 m-0 p-0 text-danger mb-2">نام و نام خانوادگی  وارد شده صحیح نمی باشد !</span>
+                        </div>
+                    
+
+
+                        <div class="form-group">
+                            <input type="email" class="form-input" name="email" id="email" placeholder="ایمیل" />
+                            <!-- <span class="font1 m-0 p-0 text-danger mb-2">ایمیل وارد شده صحیح نمی باشد !</span> -->
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" class="form-input" name="tehhphone" id="tehhphone"
+                                placeholder="تلفن تماس" />
+                            <!-- <span class="font1 m-0 p-0 text-danger mb-2">ایمیل وارد شده صحیح نمی باشد !</span> -->
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" class="form-input" name="password" id="password" placeholder="پسورد" />
+                            <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
+                            <!-- <span class="font1 m-0 p-0 text-danger mb-2">پسورد وارد شده صحیح نمی باشد !</span> -->
+                        </div>
+
+                        <div class="form-group">
+                            <input type="password" class="form-input" name="re_password" id="re_password"
+                                placeholder="تکرار پسورد  " />
+                            <!-- <span class="font1 m-0 p-0 text-danger mb-2">تکرار پسورد وارد شده صحیح نمی باشد !</span> -->
+                        </div>
+
+
+
+                        <div class="form-group" style="width: 150px;">
+                            <a href="#" name="Confirm" id="ConfirmBtn" class="form-submit2 pointer text-center">دریافت کد تایید
+                            </a>
+                        </div>
+
+                        
+                        <div class="form-group " id="Confirm">
+                            <div style="display: flex;justify-content: center;">
+                                <div style="width: 75%;">
+                                    <hr />
+                                </div>
+                            </div>
+                            <br>
+                            <input type="text" class="form-input" name="password" id="password"
+                                placeholder="کد ارسال شده به جیمیل شما  " />
+                            <!-- <span class="font1 m-0 p-0 text-danger mb-2">کد ارسالی وارد شده صحیح نمی باشد !</span> -->
+                        </div>
+
+
+                        <div class="form-group" id="SignUp">
+                            <input type="submit" name="submit" id="submit" class="form-submit pointer "
+                                value=" ثبت نام  " />
+                        </div>
+
+                    </form>
+                    <p class="loginhere">
+                        قبلا ثبت نام کرده اید ؟ <a href="#" class="loginhere-link"> <span class="bbtomb">ورود</span></a>
+                    </p>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/js/Accounting.js"></script>
+
+</body>
+
+</html>

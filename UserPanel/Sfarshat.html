@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Color Top Page in Mobile  -->
+  <meta name="theme-color" content="#0F1322" />
+
+  <!-- titlt page  -->
+  <title>دوست دار خانواده</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/images/logo/favicon2.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../assets/css/style-prefix.css">
+  <link rel="stylesheet" href="../assets/css/product.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+
+
+</head>
+
+<body dir="rtl">
+
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal d-none" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/slider/fresh-dairy-products (1).jpg" alt="subscribe newsletter" width="400"
+          height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title"> در خبرنامه ما عضو شوید. </h3>
+
+            <p class="newsletter-desc">
+              در خبرنامه <span class="blue-text FSarbaz">دوست دار
+                خانواده</span> عضو شوید برای دریافت محصولات جدید !
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="ایمیل شما " required>
+
+          <button type="submit" class="btn-newsletter">عضویت</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast d-none" data-toast>
+
+    <button class="toast-close-btn" data-toast-close>
+      <ion-icon name="close-outline"></ion-icon>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/product2/clothes-2.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        محصول پرطرفدار موجود شد !
+      </p>
+
+      <p class="toast-title">
+        پنیر محلی تبریز
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 دقیقه</time> پیش
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!--
+    - HEADER
+  -->
+
+  <header class="shadow">
+
+    <div class="header-top">
+
+      <div class="container">
+
+        <ul class="header-social-container">
+
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="header-alert-news">
+          <p>
+            <b class="blue-text font2">ارسال رایگان ! </b>
+            برای سفارش های بیشتر از :
+            <b> <span>300,000</span> <span>تومان</span></b>
+          </p>
+        </div>
+
+        <ul class="header-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+
+
+        </ul>
+
+
+      </div>
+
+    </div>
+
+    <div class="header-main">
+
+      <div class="container">
+
+
+        <h1 class=" FSarbaz blue-text header-content">
+          دوست دار خانواده
+        </h1>
+
+        <div class="header-search-container">
+
+          <input type="search" name="search" class="search-field" placeholder="محصول مورد نظر خود را جستجو کنید !">
+
+          <button class="search-btn">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="header-user-actions">
+
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+            <span class="count">0</span>
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <nav class="desktop-navigation-menu">
+
+      <div class="container">
+
+        <ul class="desktop-menu-category-list">
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">خانه</a>
+          </li>
+
+          <li class="menu-category"></li>
+          <li class="menu-category ">
+            <a href="#" class="menu-title">لبنی</a>
+
+            <ul class="dropdown-list">
+
+              <li class="panel-list-item">
+                <a href="#">بستنی فالوده </a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#"> شیر </a>
+              </li>
+
+              <li class="panel-list-item">
+                <a href="#"> پنیر</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> کره و ماست</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> دوغ </a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> پنیر</a>
+              </li>
+              <li class="panel-list-item">
+                <a href="#"> دوغ </a>
+              </li>
+
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">غیر لبنی</a>
+
+            <ul class="dropdown-list">
+
+              <li class="dropdown-item">
+                <a href="#">ترشی</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">رب</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#">حلوا</a>
+              </li>
+
+              <li class="dropdown-item">
+                <a href="#"> عسل</a>
+              </li>
+
+            </ul>
+          </li>
+
+          <li class="menu-category">
+            <a href="#TellUs" class="menu-title">ارتباط با ما</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title">درباره ما </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+    <div class="mobile-bottom-navigation">
+
+      <button class="action-btn" data-mobile-menu-open-btn>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="bag-handle-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="home-outline"></ion-icon>
+      </button>
+
+
+      <button class="action-btn">
+        <ion-icon name="heart-outline"></ion-icon>
+
+        <span class="count">0</span>
+      </button>
+
+      <button class="action-btn">
+        <ion-icon name="person-outline"></ion-icon>
+      </button>
+
+
+
+
+
+    </div>
+
+    <nav class="mobile-navigation-menu  has-scrollbar" data-mobile-menu>
+
+      <div class="menu-top">
+        <h2 class="menu-title">منو</h2>
+
+        <button class="menu-close-btn" data-mobile-menu-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="mobile-menu-category-list">
+
+        <li class="menu-category">
+          <a href="#" class="menu-title">خانه</a>
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">لبنی</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">شیر</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"> دوغ</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">بستنی فالوده </a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ماست</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+        <li class="menu-category">
+
+          <button class="accordion-menu" data-accordion-btn>
+            <p class="menu-title">غیر لبنی</p>
+
+            <div>
+              <ion-icon name="add-outline" class="add-icon"></ion-icon>
+              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+            </div>
+          </button>
+
+          <ul class="submenu-category-list" data-accordion>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">عسل</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">ترشی</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title">نوشیدنی ها</a>
+            </li>
+
+            <li class="submenu-category">
+              <a href="#" class="submenu-title"> رب</a>
+            </li>
+
+          </ul>
+
+        </li>
+
+
+
+
+      </ul>
+
+      <div class="menu-bottom">
+
+        <ul class="menu-category-list">
+          <li class="menu-category">
+            <a href="#TellUs" class="menu-title hover-text-bookColor">ارتباط با ما</a>
+          </li>
+
+          <li class="menu-category">
+            <a href="#" class="menu-title hover-text-bookColor">درباره ما </a>
+          </li>
+
+        </ul>
+
+        <ul class="menu-social-container">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+
+
+  <!--
+    - MAIN
+  -->
+
+
+
+  <!-- start main  -->
+  <main>
+
+    <div class="container pt-4 pb-4">
+      <div class="row justify-content-lg-between">
+        <!-- cols of right and left-->
+        <section class=" col-12 col-lg-3 p-0">
+          <!-- cols right  -->
+          <section class="sidebar-widget noSelect">
+            <div class="d-flex  align-items-center border-bottom-0  mb-3" style="justify-content: right;">
+              <div class="fa fa-user icon-user">
+              </div>
+
+              <div class="fontS1">
+                ابوالفضل کاربخش
+              </div>
+            </div>
+
+            <div>
+              <ul class="user-item-panel" style="padding: 0;">
+                <li class="onPage"><span class="fa fa-shopping-cart icon-item"></span> سفارشات من </li>
+                <li> <span class="fa fa-map-marker" style="padding-left: 11px; padding-right: 3px;"></span>آدرس من</li>
+                <li> <span class="fa fa-pencil icon-item"></span> ویرایش اطلاعات کاربری</li>
+                <li> <span class="fa fa-sign-out" style="padding-left: 9px;"></span> خروج </li>
+
+              </ul>
+            </div>
+          </section>
+
+        </section>
+
+
+
+        <!-- cols left  -->
+        <section class=" col-12  col-lg-8 p-0">
+          <div class="sidebar-widget noSelect ">
+            <h2 class="font5 mb-2 p-2"> سفارشات من :</h2>
+            <hr>
+
+            <div class="m-1  border p-2 bg-dash ">
+              <!-- date and cod product ande price -->
+              <div class="d-flex justify-content-between align-items-start mb-1">
+
+                <div>
+                  <p class="font2 mb-0">کد سفارش : <span class="text-dark">53687495</span></p>
+                  <p class="font2">تاریخ : <span class="text-dark">
+                      <span>12</span>/<span>07</span>/<span>1402</span>
+                    </span></p>
+                </div>
+
+                <div>
+                  <p class="price font3"> 375,565 <span>تومان</span></p>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-start">
+                <a href="#1" class=" m-0 mx-1 p-0" >
+                  <div class="border">
+                    <img src="../assets/images/product2/clothes-2.jpg"  alt="" style="width: 65px;">
+                  </div>
+                </a>
+                <a href="#2" class="m-0 p-0 mx-1" >
+                  <div class="border ">
+                    <img src="../assets/images/product2/cream.jpg"  alt="" style="width: 65px;">
+                  </div>
+                </a>
+              </div>
+
+              <div class="d-flex justify-content-start">
+                <p class="font3">وضعیت سفارش شما :</p>
+                <!-- <p class="mx-3 font3 badge bg-success ">تحویل داده شد </p> -->
+                <!-- <p class="mx-3 font3 badge bg-danger ">  لغو گردید </p> -->
+                <p class="mx-3 font3 badge bg-primary ">  در حال ارسال  </p>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+
+
+  <!--
+    - FOOTER
+  -->
+
+  <footer>
+
+
+
+    <div class="footer-nav" id="TellUs">
+
+      <div class="container">
+
+
+
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">ارتباط با ما</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              اصفهان ، خیابان سهروردی شمالی خیابان خرمشهر خیابان عشقیار نبش کوچه دوم
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+02122988049" class="footer-nav-link">02122988049</a>
+          </li>
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+02122988049" class="footer-nav-link">09023127615</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title"> </h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+        <div class="d-flex">
+          <a href="#">
+            <img src="../assets/images/PAy/logo.png" alt="نماد الکتروینک">
+          </a>
+
+          <a href="#">
+            <img src="../assets/images/PAy/etehadiye.png" alt="عضو اتحادیه کشوری">
+          </a>
+        </div>
+
+        <p class="copyright">
+          تمامی حقوق &copy; این وب سایت محفوظ و متعلق به لبنیات <a href="#" class="blue-text FSarbaz">دوست دار
+            خانواده</a>
+          می باشد
+          .
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/jquery-3.5.1.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/Header.js"></script>
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
